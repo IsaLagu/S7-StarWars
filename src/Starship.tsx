@@ -17,9 +17,11 @@ const Starship = ({ starship }: StarshipProps) => {
   };
 
   return (
-    <div onClick={handleClick}>
-      <p className="text-2xl">{starship.name}</p>
-      <div>{starship.model}</div>
+    <div className="flex justify-center">
+      <div className="w-9/12 p-6 bg-neutral-900 text-gray-400 mb-3" onClick={handleClick}>
+        <p className="text-xl">{starship.name}</p>
+        <div>{starship.model}</div>
+      </div>
     </div>
   );
 };

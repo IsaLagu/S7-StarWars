@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setCount, setPage, setStarships } from "./redux/starshipSlice";
 import { RootState } from "./redux/store";
 import Starship from "./Starship";
+import Navbar from "./Navbar";
 
 const StarshipList = () => {
   const dispatch = useDispatch();
@@ -24,17 +25,20 @@ const StarshipList = () => {
   };
 
   return (
-    <div>
+    <div className="bg-black">
+      <Navbar />
       <div>
         {starship.list.map((s) => (
           <Starship starship={s} key={s.name} />
         ))}
       </div>
-      {starship.page < numPages ? (
-        <button className="text-gray-700" onClick={handleViewMore}>
-          View more...
-        </button>
-      ) : null}
+      <div className="flex justify-center">
+        {starship.page < numPages ? (
+          <button className="text-white text-2xl" onClick={handleViewMore}>
+            View more...
+          </button>
+        ) : null}
+      </div>
     </div>
   );
 };
