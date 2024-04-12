@@ -19,7 +19,7 @@ const StarshipDetails = () => {
           src={`https://starwars-visualguide.com/assets/img/starships/${id}.jpg`}
           alt={currentStarship?.name}
         />
-        <div className="w-full md:w-6/12 h-72 pl-4 pt-7 pb-6 text-gray-400 bg-neutral-800 border-l-4 border-red-600">
+        <div className="w-full md:w-6/12 h-100 pl-4 pt-7 pb-6 text-gray-400 bg-neutral-800 border-l-4 border-red-600">
           <div className="text-2xl mb-4">{currentStarship?.name}</div>
           <div className="text-xs block space-y-2.5 md:gap-x-8 md:gap-y-4 md:items-center md:grid md:grid-cols-2 my-auto">
             <div>Model: {currentStarship?.model}</div>

@@ -1,13 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import StarshipList from "./StarshipList";
 import StarshipDetails from "./StarshipDetails";
+import Home from "./Home";
 import "./App.css";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<Home />} />
         {/* <Route element={<ProtectedRoute isActive={isLogged} />}> */}
         <Route path="/starships" element={<StarshipList />} />
         <Route path="/starship-details" element={<StarshipDetails />} />
