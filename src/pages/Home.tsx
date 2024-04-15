@@ -1,5 +1,5 @@
-import star_wars_logo from "./assets/star_wars_logo.png";
-import Daco from "./assets/Daco.png";
+import star_wars_logo from "../assets/star_wars_logo.png";
+import Daco from "../assets/Daco.png";
 import { Link } from "react-router-dom";
 
 const Home = () => {

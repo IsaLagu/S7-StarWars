@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
-import { Starship } from "./types";
-import { setCurrentStarship } from "./redux/starshipSlice";
+import { Starship } from "../types";
+import { setCurrentStarship } from "../redux/starshipSlice";
 import { useNavigate } from "react-router-dom";
 
 interface StarshipProps {
@@ -17,8 +17,8 @@ const Starship = ({ starship }: StarshipProps) => {
   };
 
   return (
-    <div className="flex justify-center">
-      <div className="w-9/12 p-6 bg-neutral-900 text-gray-400 mb-3" onClick={handleClick}>
+    <div className="flex justify-center cursor-pointer text-gray-400 hover:text-white">
+      <div className="w-9/12 p-6 bg-neutral-900 mb-3" onClick={handleClick}>
         <p className="text-xl">{starship.name}</p>
         <div>{starship.model}</div>
       </div>

@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setCount, setPage, setStarships } from "./redux/starshipSlice";
-import { RootState } from "./redux/store";
-import Starship from "./Starship";
-import Navbar from "./Navbar";
+import { setCount, setPage, setStarships } from "../redux/starshipSlice";
+import { RootState } from "../redux/store";
+import Starship from "../components/Starship";
+import Navbar from "../components/Navbar";
 
 const StarshipList = () => {
   const dispatch = useDispatch();
@@ -25,8 +25,7 @@ const StarshipList = () => {
   };
 
   return (
-    <div className="bg-black">
-      <Navbar />
+    <>
       <div>
         {starship.list.map((s) => (
           <Starship starship={s} key={s.name} />
@@ -39,7 +38,7 @@ const StarshipList = () => {
           </button>
         ) : null}
       </div>
-    </div>
+    </>
   );
 };
 

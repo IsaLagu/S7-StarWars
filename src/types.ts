@@ -8,3 +8,8 @@ export interface Starship {
   crew: number;
   url: string;
 }
+
+export interface User {
+  id: number;
+  token: string;
+}
