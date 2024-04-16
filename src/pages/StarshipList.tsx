@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { setCount, setPage, setStarships } from "../redux/starshipSlice";
 import { RootState } from "../redux/store";
 import Starship from "../components/Starship";
-import Navbar from "../components/Navbar";
 
 const StarshipList = () => {
   const dispatch = useDispatch();

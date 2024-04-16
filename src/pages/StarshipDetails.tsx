@@ -1,11 +1,11 @@
 import { useSelector } from "react-redux";
 import { RootState } from "../redux/store";
-import Navbar from "../components/Navbar";
-import Pilots from "../Pilots";
+import Pilots from "../components/Pilots";
+import Films from "../components/Films";
 
 const StarshipDetails = () => {
   const { currentStarship } = useSelector((state: RootState) => state.starship);
-  const match = currentStarship?.url.match(/[0-9]/);
+  const match = currentStarship?.url.match(/\d+/g);
   const id = match ? Number(match[0]) : null;
 
   return (
@@ -31,7 +31,8 @@ const StarshipDetails = () => {
           </div>
         </div>
       </div>
-      {/* <Pilots /> */}
+      <Pilots />
+      <Films />
     </>
   );
 };

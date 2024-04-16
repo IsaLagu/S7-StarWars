@@ -7,6 +7,8 @@ export interface Starship {
   length: number;
   crew: number;
   url: string;
+  pilots: string[];
+  films: string[];
 }
 
 export interface User {
