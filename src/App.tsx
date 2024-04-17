@@ -6,6 +6,7 @@ import "./App.css";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/starships" element={<StarshipList />} />
           <Route path="/starship-details" element={<StarshipDetails />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
