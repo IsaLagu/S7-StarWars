@@ -1,30 +1,59 @@
-# React + TypeScript + Vite
+# Star Wars Spaceships React Sprint
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project is a web application built with React that aims to display information about Star Wars universe, including details about spaceships, pilots and films.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Screenshots
 
-## Expanding the ESLint configuration
+### Starship details
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<img width="400" src="https://github.com/IsaLagu/S7-StarWars/assets/126961475/083deb09-2d44-4220-82be-92c26f34f4b4">
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies used
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- Vite: version ^5.2.0
+- React: version ^18.2.0
+- React Router: version ^6.22.3
+- Redux Toolkit: version ^2.2.3
+- React Redux: version ^9.1.0
+- React Router: version ^6.22.3
+- TypeScript: version ^5.2.2
+- Tailwindcss: version ^3.4.3
+
+## Setup & run
+
+· Install the dependencies:
+
+```
+  npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+· Run the project:
+
+```
+  npm run dev
+```
+
+· Open [http://localhost:5173/](http://localhost:5173/) to view it in your browser.
+
+## Features
+
+- **Main Screen with Spaceships List Display:** Showcasing a list of Star Wars spaceships with basic information such as name and model.
+- **Spaceship Details, Pilots and Films Display:** Adding the spaceship details and displaying cards for pilots and films associated with each spaceship.
+- **User Authentication:** Implementing user authentication functionality, allowing users to register, login, and access protected routes to view spaceship details.
+- **Protected Routes with React Router:** Ensuring that the list of spaceships is only visible to registered users.
+- **API Integration:** Using the Star Wars API (SWAPI).
+
+## Roadmap
+
+- [x] **Browse Spaceships:** Explore a list of Star Wars spaceships on the main screen.
+- [x] **View Details:** Click on a spaceship to see its detailed information.
+- [x] **User Authentication:** Register or log in to access personalized features.
+- [x] **Modern UI:** Enjoy a modern and intuitive interface inspired by the official Star Wars website.
+- [] **Expanded API Integration:** Utilize additional endpoints from the Star Wars API to incorporate information about characters, planets, and more, enriching the app's content.
+- [] **Starship details:** Fetch Starship when the page is reloaded.
+
+## Author
+
+Isabel Afonso Guizado

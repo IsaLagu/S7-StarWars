@@ -4,9 +4,12 @@ import { Link, useNavigate } from "react-router-dom";
 import { setUser } from "../redux/userSlice";
 import { User } from "../types";
 
+const FAKE_USER_EMAIL = "eve.holt@reqres.in";
+const FAKE_USER_PASSWORD = "cityslicka";
+
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState(FAKE_USER_EMAIL);
+  const [password, setPassword] = useState(FAKE_USER_PASSWORD);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -37,7 +40,7 @@ const Login = () => {
         </Link>
       </div>
       <div className="text-gray-400 font-medium text-lg text-center">LOGIN</div>
-      <form className="max-w-sm mx-auto mt-8">
+      <form className="max-w-sm mx-auto mt-11">
         <div className="mb-5">
           <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-400">
             Your email
@@ -62,6 +65,7 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
             id="password"
             className="bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            placeholder="******"
             required
           />
         </div>
