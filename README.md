@@ -51,8 +51,8 @@ This project is a web application built with React that aims to display informat
 - [x] **View Details:** Click on a spaceship to see its detailed information.
 - [x] **User Authentication:** Register or log in to access personalized features.
 - [x] **Modern UI:** Enjoy a modern and intuitive interface inspired by the official Star Wars website.
-- [] **Expanded API Integration:** Utilize additional endpoints from the Star Wars API to incorporate information about characters, planets, and more, enriching the app's content.
-- [] **Starship details:** Fetch Starship when the page is reloaded.
+- [ ] **Expanded API Integration:** Utilize additional endpoints from the Star Wars API to incorporate information about characters, planets, and more, enriching the app's content.
+- [ ] **Starship details:** Fetch Starship when the page is reloaded.
 
 ## Author
 
